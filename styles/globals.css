@@ -24,3 +24,9 @@ a {
     background: black;
   }
 }
+
+@font-face {
+  font-family: "Changa";
+  src: local("Changa"),
+    url("/assets/fonts/Changa/Changa-VariableFont_wght.ttf") format("truetype");
+}

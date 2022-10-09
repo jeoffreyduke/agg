@@ -1,0 +1,36 @@
+.Header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+}
+
+.right {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: Changa;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  position: relative;
+  bottom: 0.7rem;
+  height: 2.5rem;
+  width: 10rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background-color: transparent;
+  margin-left: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #f5a317;
+  transition: 0.9s;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: inset 20rem 0 0 0 #f5a317;
+  color: #111111;
+  border-color: #f5a317;
+}
