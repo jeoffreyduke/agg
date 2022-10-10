@@ -1,14 +1,65 @@
-.container {
-  height: 100vh;
-  width: 100vw;
-}
-
 .ParticleImage {
   height: 70vh;
   position: relative;
-  top: 4rem;
+  top: 3rem;
+  left: 2rem;
 }
 
-.heading {
+/* styling for first section */
+.FirstSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 8rem;
+  height: 86.5vh;
+  width: 100vw;
+}
+
+.firstSectionRight {
+  width: 35rem;
+  position: relative;
+  right: 11rem;
+  top: 7rem;
+}
+
+.smTxt {
+  position: relative;
+  bottom: 4rem;
   font-family: Changa;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.mediumTxt {
+  font-family: Changa;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.bigTxt {
+  position: relative;
+  bottom: 3rem;
+  font-family: Changa;
+  font-size: 6rem;
+  font-weight: 600;
+}
+
+.bigBtn {
+  position: relative;
+  bottom: 2rem;
+  height: 2.5rem;
+  width: 23rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background-color: transparent;
+  margin-left: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #f5a317;
+  transition: 0.8s;
+}
+
+.bigBtn:hover,
+.bigBtn:focus {
+  box-shadow: inset 23rem 0 0 0 #f5a317;
+  color: #111111;
+  border-color: #f5a317;
 }

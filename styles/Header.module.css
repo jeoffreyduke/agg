@@ -1,5 +1,8 @@
 .Header {
   width: 100vw;
+  position: sticky;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 3rem;
@@ -8,7 +11,7 @@
 .right {
   display: flex;
   gap: 1rem;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 600;
   font-family: Changa;
   margin-top: 1.5rem;
@@ -19,18 +22,18 @@
   bottom: 0.7rem;
   height: 2.5rem;
   width: 10rem;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
   background-color: transparent;
   margin-left: 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid #f5a317;
-  transition: 0.9s;
+  transition: 0.8s;
 }
 
 .btn:hover,
 .btn:focus {
-  box-shadow: inset 20rem 0 0 0 #f5a317;
+  box-shadow: inset 10rem 0 0 0 #f5a317;
   color: #111111;
   border-color: #f5a317;
 }
