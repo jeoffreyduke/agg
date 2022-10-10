@@ -51,15 +51,78 @@
   font-size: 0.72rem;
   font-weight: 600;
   background-color: transparent;
+  color: var(--txt);
   margin-left: 0.5rem;
   border-radius: 0.25rem;
-  border: 1px solid #f5a317;
+  border: 1px solid var(--theme);
   transition: 0.8s;
 }
 
 .bigBtn:hover,
 .bigBtn:focus {
-  box-shadow: inset 23rem 0 0 0 #f5a317;
+  box-shadow: inset 23rem 0 0 0 var(--theme);
   color: #111111;
-  border-color: #f5a317;
+  border-color: var(--theme);
+}
+
+/* styling for second section */
+.SecondSection {
+  padding: 0.5rem 3rem;
+}
+
+.secondHeading {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: Changa;
+}
+
+.gameCon > span,
+.secondHeading > span {
+  position: relative;
+  bottom: 0.5rem;
+  color: var(--theme);
+  margin-right: 1rem;
+}
+
+.checkpoint {
+  position: relative;
+  top: 1rem;
+  font-size: 1.18rem;
+  font-weight: 500;
+}
+
+.checkpoint > span {
+  position: relative;
+  bottom: 0.35rem;
+  padding: 0.5rem;
+  margin-left: 2.2rem;
+}
+
+.gameCon {
+  display: flex;
+  margin-left: 2rem;
+}
+
+.gameCon > span {
+  position: relative;
+  bottom: 0;
+  top: 0.5rem;
+}
+
+.gameThree,
+.gameTwo,
+.gameOne {
+  width: 60rem;
+  height: 28rem;
+  border: 2px solid var(--theme);
+  margin-bottom: 3rem;
+  background: linear-gradient(rgba(249, 214, 126, 0.678) 0%, #f5a417a6 100%),
+    url("/assets/images/dot-grid.svg");
+  box-shadow: rgb(249, 215, 126) 0px 0px 10px;
+}
+
+.gameThree:hover,
+.gameTwo:hover,
+.gameOne:hover {
+  box-shadow: rgb(249, 215, 126) 0px 0px 15px;
 }

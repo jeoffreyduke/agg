@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 3rem;
+  z-index: 100;
+  background-color: var(--bg);
 }
 
 .right {
@@ -24,16 +26,17 @@
   width: 10rem;
   font-size: 0.72rem;
   font-weight: 600;
+  color: var(--txt);
   background-color: transparent;
   margin-left: 0.5rem;
   border-radius: 0.25rem;
-  border: 1px solid #f5a317;
+  border: 1px solid var(--theme);
   transition: 0.8s;
 }
 
 .btn:hover,
 .btn:focus {
-  box-shadow: inset 10rem 0 0 0 #f5a317;
+  box-shadow: inset 10rem 0 0 0 var(--theme);
   color: #111111;
-  border-color: #f5a317;
+  border-color: var(--theme);
 }

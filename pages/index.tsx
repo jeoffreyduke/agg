@@ -9,6 +9,7 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import Header from "../components/Header";
 import FirstSection from "../components/FirstSection";
+import SecondSection from "../components/SecondSection";
 
 const Home: NextPage = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -113,6 +114,7 @@ const Home: NextPage = () => {
       />
       <Header />
       <FirstSection />
+      <SecondSection />
     </div>
   );
 };
