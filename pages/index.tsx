@@ -10,6 +10,7 @@ import { loadFull } from "tsparticles";
 import Header from "../components/Header";
 import FirstSection from "../components/FirstSection";
 import SecondSection from "../components/SecondSection";
+import ThirdSection from "../components/ThirdSection";
 
 const Home: NextPage = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -31,7 +32,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Tech4Pidgin</title>
+        <title>AGG</title>
         <meta name="description" content="Choraji" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -115,6 +116,7 @@ const Home: NextPage = () => {
       <Header />
       <FirstSection />
       <SecondSection />
+      <ThirdSection />
     </div>
   );
 };
