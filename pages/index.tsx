@@ -11,6 +11,7 @@ import Header from "../components/Header";
 import FirstSection from "../components/FirstSection";
 import SecondSection from "../components/SecondSection";
 import ThirdSection from "../components/ThirdSection";
+import FourthSection from "../components/FourthSection";
 
 const Home: NextPage = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -117,6 +118,7 @@ const Home: NextPage = () => {
       <FirstSection />
       <SecondSection />
       <ThirdSection />
+      <FourthSection />
     </div>
   );
 };

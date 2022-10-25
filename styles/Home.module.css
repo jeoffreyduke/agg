@@ -135,33 +135,8 @@
   padding: 0.5rem 3rem;
 }
 
-.sponsorsTop {
-  display: flex;
-  width: 300vw;
-  position: relative;
-  bottom: 5rem;
-  /* animation: sponsorsTop 10s linear infinite;*/
-}
-
-.sponsorsBtm {
-  display: flex;
-  width: 300vw;
-  position: relative;
-  bottom: 16rem;
-}
-
-.firstTop {
-  position: relative;
-  right: 0rem;
-}
-
-.secTop {
-  position: relative;
-  right: 0rem;
-}
-
 .sponsor {
-  display: inline-block;
+  display: flex;
   margin-left: 4.5rem;
 }
 

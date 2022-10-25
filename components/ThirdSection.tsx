@@ -34,92 +34,70 @@ const ThirdSection = () => {
         </span>
         OUR PARTNERS
       </div>
-      <div className={styles.sponsorSlide}>
-        <div className={styles.sponsorsTop}>
-          <div className={styles.firstTop} ref={firstTop}>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/Lbank.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/Reef.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/Patricia.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/Dimension11.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/deca4.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
+      <div className={styles.sponsorCon}>
+        <div className={styles.sponsor}>
+          <div className={styles.sponsorDesc}>
+            {`LBank Cryptocurrency Exchange - is the world's leading crypto
+            trading platform providing safe and professional services for global
+            crypto users.`}
           </div>
-
-          <div className={styles.secTop} ref={firstTop}>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/Lbank.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/Reef.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/Patricia.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/Dimension11.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
-            <div className={styles.sponsor}>
-              <Image
-                src={"/assets/images/partners/deca4.svg"}
-                alt="sponsor"
-                width={400}
-                height={400}
-              />
-            </div>
+          <div className={styles.sponsorImg}>
+            <Image
+              src={"/assets/images/partners/Lbank.svg"}
+              alt="sponsor"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+        <div className={styles.sponsor}>
+          <div className={styles.sponsorDesc}></div>
+          <div className={styles.sponsorImg}>
+            <Image
+              src={"/assets/images/partners/Reef.svg"}
+              alt="sponsor"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+        <div className={styles.sponsor}>
+          <div className={styles.sponsorDesc}></div>
+          <div className={styles.sponsorImg}>
+            <Image
+              src={"/assets/images/partners/Patricia.svg"}
+              alt="sponsor"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+        <div className={styles.sponsor}>
+          <div className={styles.sponsorDesc}></div>
+          <div className={styles.sponsorImg}>
+            <Image
+              src={"/assets/images/partners/Dimension11.svg"}
+              alt="sponsor"
+              width={400}
+              height={400}
+            />
+          </div>
+        </div>
+        <div className={styles.sponsor}>
+          <div className={styles.sponsorDesc}>
+            DECA4 brings together thought leaders and innovators to identify how
+            clients can leverage blockchain in their business. With experts from
+            software development and consulting, legal, marketing, educational,
+            business development organizations, we are ideally positioned to
+            assist you in building a blockchain solution which suits your needs.
+          </div>
+          <div className={styles.sponsorImg}>
+            <Image
+              src={"/assets/images/partners/deca4.svg"}
+              alt="sponsor"
+              width={400}
+              height={400}
+            />
           </div>
         </div>
       </div>
