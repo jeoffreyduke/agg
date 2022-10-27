@@ -132,8 +132,8 @@
 .ThirdSection {
   width: 100vw;
   padding: 0.5rem 3rem;
-  padding-bottom: 50vh;
-  overflow-y: hidden;
+  margin-bottom: 15rem;
+  overflow: hidden;
 }
 
 .thirdHeading {
@@ -173,4 +173,10 @@
   translate: 200;
   position: relative;
   right: 22.5rem;
+}
+
+/* styling for fourth section */
+.FourthSection {
+  padding-bottom: 50vh;
+  padding: 0.5rem 3rem;
 }

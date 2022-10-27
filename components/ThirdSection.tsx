@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useRef, useLayoutEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../styles/Home.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -68,103 +68,6 @@ const ThirdSection = () => {
     }, 1000);
 
     return () => {};
-
-    {
-      /* gsap.to(lbankTxt.current, {
-      x: "-405",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: lbankTxt.current,
-        scrub: true,
-      },
-    });
-    gsap.to(lbankImg.current, {
-      x: "310",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: lbankImg.current,
-        scrub: true,
-      },
-    });
-
-    gsap.to(reefTxt.current, {
-      x: "-405",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: reefTxt.current,
-        scrub: true,
-      },
-    });
-    gsap.to(reefImg.current, {
-      x: "310",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: reefImg.current,
-        scrub: true,
-      },
-    });
-
-    gsap.to(patriciaTxt.current, {
-      x: "-405",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: patriciaTxt.current,
-        scrub: true,
-      },
-    });
-    gsap.to(patriciaImg.current, {
-      x: "310",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: patriciaImg.current,
-        scrub: true,
-      },
-    });
-
-    gsap.to(dimenTxt.current, {
-      x: "-405",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: dimenTxt.current,
-        scrub: true,
-      },
-    });
-    gsap.to(dimenImg.current, {
-      x: "310",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: dimenImg.current,
-        scrub: true,
-      },
-    });
-
-    gsap.to(decaTxt.current, {
-      x: "-405",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: decaTxt.current,
-        scrub: true,
-      },
-    });
-    gsap.to(decaImg.current, {
-      x: "310",
-      duration: "1.5",
-      ease: "power1.Out",
-      scrollTrigger: {
-        trigger: decaImg.current,
-        scrub: true,
-      },
-    }); */
-    }
   }, [
     lbankTxt,
     lbankImg,
