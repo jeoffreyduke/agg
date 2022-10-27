@@ -130,30 +130,47 @@
 
 /* styling for third section */
 .ThirdSection {
-  height: 100vh;
   width: 100vw;
   padding: 0.5rem 3rem;
+  padding-bottom: 50vh;
+  overflow-y: hidden;
+}
+
+.thirdHeading {
+  margin-bottom: 6rem;
 }
 
 .sponsor {
   display: flex;
+  margin-top: 2rem;
   margin-left: 4.5rem;
+  font-size: 1rem;
+  font-family: Changa;
 }
 
-@keyframes sponsorsTop {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -100%;
-  }
+.sponsorDesc,
+.sponsorImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65rem;
+  height: 20rem;
+  background-color: rgba(40, 40, 40, 0.95);
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
-@keyframes sponsorsBtm {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: -100%;
-  }
+.sponsorDesc {
+  transform: translateX(-200);
+  position: relative;
+  left: 22.5rem;
+  padding: 0rem 5rem;
+}
+
+.sponsorImg {
+  background-color: #fff;
+  transform: translateX(200);
+  translate: 200;
+  position: relative;
+  right: 22.5rem;
 }

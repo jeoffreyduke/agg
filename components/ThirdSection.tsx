@@ -1,23 +1,189 @@
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useLayoutEffect } from "react";
 import styles from "../styles/Home.module.css";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const ThirdSection = () => {
-  const firstTop = useRef<HTMLDivElement>(null);
-  const secTop = useRef<HTMLDivElement>(null);
+  const section = useRef<HTMLDivElement>(null);
+  const lbankTxt = useRef<HTMLDivElement>(null);
+  const lbankImg = useRef<HTMLDivElement>(null);
+  const reefTxt = useRef<HTMLDivElement>(null);
+  const reefImg = useRef<HTMLDivElement>(null);
+  const patriciaTxt = useRef<HTMLDivElement>(null);
+  const patriciaImg = useRef<HTMLDivElement>(null);
+  const dimenTxt = useRef<HTMLDivElement>(null);
+  const dimenImg = useRef<HTMLDivElement>(null);
+  const decaTxt = useRef<HTMLDivElement>(null);
+  const decaImg = useRef<HTMLDivElement>(null);
+
+  const openSponsors = (
+    left: React.RefObject<HTMLDivElement>,
+    right: React.RefObject<HTMLDivElement>,
+    id: string
+  ) => {
+    const tl = gsap.timeline({
+      // yes, we can add it to an entire timeline!
+      scrollTrigger: {
+        trigger: section.current?.querySelector(id),
+        scrub: 0.8,
+        start: "top bottom",
+        end: "top top",
+      },
+    });
+
+    gsap.to(left.current, {
+      x: "-405",
+      duration: "5",
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: left.current,
+        scrub: 0.8,
+        start: "top bottom",
+        end: "top top",
+      },
+    });
+    gsap.to(right.current, {
+      x: "310",
+      duration: "5",
+      ease: "power1.out",
+      scrollTrigger: {
+        trigger: right.current,
+        scrub: 0.8,
+        start: "top bottom",
+        end: "top top",
+      },
+    });
+  };
 
   useEffect(() => {
-    // use a timeline to start the secTop animation after the firstTop animation
-    // let the two flow in from the left concurrently and continuosly
-  }, []);
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+      openSponsors(lbankTxt, lbankImg, "#lbank");
+      openSponsors(reefTxt, reefImg, "#reef");
+      openSponsors(patriciaTxt, patriciaImg, "#patricia");
+      openSponsors(dimenTxt, dimenImg, "#dimen");
+      openSponsors(decaTxt, decaImg, "#deca");
+    }, 1000);
+
+    return () => {};
+
+    {
+      /* gsap.to(lbankTxt.current, {
+      x: "-405",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: lbankTxt.current,
+        scrub: true,
+      },
+    });
+    gsap.to(lbankImg.current, {
+      x: "310",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: lbankImg.current,
+        scrub: true,
+      },
+    });
+
+    gsap.to(reefTxt.current, {
+      x: "-405",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: reefTxt.current,
+        scrub: true,
+      },
+    });
+    gsap.to(reefImg.current, {
+      x: "310",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: reefImg.current,
+        scrub: true,
+      },
+    });
+
+    gsap.to(patriciaTxt.current, {
+      x: "-405",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: patriciaTxt.current,
+        scrub: true,
+      },
+    });
+    gsap.to(patriciaImg.current, {
+      x: "310",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: patriciaImg.current,
+        scrub: true,
+      },
+    });
+
+    gsap.to(dimenTxt.current, {
+      x: "-405",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: dimenTxt.current,
+        scrub: true,
+      },
+    });
+    gsap.to(dimenImg.current, {
+      x: "310",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: dimenImg.current,
+        scrub: true,
+      },
+    });
+
+    gsap.to(decaTxt.current, {
+      x: "-405",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: decaTxt.current,
+        scrub: true,
+      },
+    });
+    gsap.to(decaImg.current, {
+      x: "310",
+      duration: "1.5",
+      ease: "power1.Out",
+      scrollTrigger: {
+        trigger: decaImg.current,
+        scrub: true,
+      },
+    }); */
+    }
+  }, [
+    lbankTxt,
+    lbankImg,
+    reefTxt,
+    reefImg,
+    patriciaTxt,
+    patriciaImg,
+    dimenTxt,
+    dimenImg,
+    decaTxt,
+    decaImg,
+  ]);
 
   return (
-    <div className={styles.ThirdSection}>
+    <div className={styles.ThirdSection} ref={section}>
       <div className={styles.checkpoint}>
         <span>[ Checkpoint reached: our partners ]</span>
       </div>
-      <div className={styles.secondHeading}>
+      <div className={`${styles.secondHeading} ${styles.thirdHeading}`}>
         <span>
           <svg
             width="24"
@@ -35,13 +201,13 @@ const ThirdSection = () => {
         OUR PARTNERS
       </div>
       <div className={styles.sponsorCon}>
-        <div className={styles.sponsor}>
-          <div className={styles.sponsorDesc}>
+        <div className={styles.sponsor} id="lbank">
+          <div className={styles.sponsorDesc} ref={lbankTxt}>
             {`LBank Cryptocurrency Exchange - is the world's leading crypto
             trading platform providing safe and professional services for global
             crypto users.`}
           </div>
-          <div className={styles.sponsorImg}>
+          <div className={styles.sponsorImg} ref={lbankImg}>
             <Image
               src={"/assets/images/partners/Lbank.svg"}
               alt="sponsor"
@@ -50,9 +216,12 @@ const ThirdSection = () => {
             />
           </div>
         </div>
-        <div className={styles.sponsor}>
-          <div className={styles.sponsorDesc}></div>
-          <div className={styles.sponsorImg}>
+        <div className={styles.sponsor} id="reef">
+          <div className={styles.sponsorDesc} ref={reefTxt}>
+            Reef chain is an EVM compatible blockchain for DeFi. It is fast,
+            scalable, has low transaction costs and does no wasteful mining.
+          </div>
+          <div className={styles.sponsorImg} ref={reefImg}>
             <Image
               src={"/assets/images/partners/Reef.svg"}
               alt="sponsor"
@@ -61,9 +230,16 @@ const ThirdSection = () => {
             />
           </div>
         </div>
-        <div className={styles.sponsor}>
-          <div className={styles.sponsorDesc}></div>
-          <div className={styles.sponsorImg}>
+        <div className={styles.sponsor} id="patricia">
+          <div className={styles.sponsorDesc} ref={patriciaTxt}>
+            Patricia is an alternative payment solutions company that
+            facilitates the easy use of cryptocurrencies for everyday
+            transactions. By harnessing the intrinsic power of Blockchain
+            technology, Patricia is set to make Crypto easy for mankind, hereby
+            creating a new and sustainable path for the present and future
+            generations.
+          </div>
+          <div className={styles.sponsorImg} ref={patriciaImg}>
             <Image
               src={"/assets/images/partners/Patricia.svg"}
               alt="sponsor"
@@ -72,9 +248,16 @@ const ThirdSection = () => {
             />
           </div>
         </div>
-        <div className={styles.sponsor}>
-          <div className={styles.sponsorDesc}></div>
-          <div className={styles.sponsorImg}>
+        <div className={styles.sponsor} id="dimen">
+          <div className={styles.sponsorDesc} ref={dimenTxt}>
+            Dimension11 Studios is an Indie game studio located in Lagos,
+            Ile-Ife, and Dubai. Our goal as an indie game studio is to enrich
+            the lives of everyday people by harnessing the latest technologies.
+            This agenda is advanced right from the heart of Africa and across
+            the world, by a legion of deeply creative, skilful and passionate
+            people.
+          </div>
+          <div className={styles.sponsorImg} ref={dimenImg}>
             <Image
               src={"/assets/images/partners/Dimension11.svg"}
               alt="sponsor"
@@ -83,15 +266,15 @@ const ThirdSection = () => {
             />
           </div>
         </div>
-        <div className={styles.sponsor}>
-          <div className={styles.sponsorDesc}>
+        <div className={styles.sponsor} id="deca">
+          <div className={styles.sponsorDesc} ref={decaTxt}>
             DECA4 brings together thought leaders and innovators to identify how
             clients can leverage blockchain in their business. With experts from
             software development and consulting, legal, marketing, educational,
             business development organizations, we are ideally positioned to
             assist you in building a blockchain solution which suits your needs.
           </div>
-          <div className={styles.sponsorImg}>
+          <div className={styles.sponsorImg} ref={decaImg}>
             <Image
               src={"/assets/images/partners/deca4.svg"}
               alt="sponsor"

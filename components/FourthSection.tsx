@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const FourthSection = () => {
-  return (
-    <div>FourthSection</div>
-  )
-}
+  return <div></div>;
+};
 
-export default FourthSection
+export default FourthSection;
