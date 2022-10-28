@@ -19,6 +19,12 @@
   margin-top: 1.5rem;
 }
 
+.right > div:hover {
+  text-shadow: rgba(249, 215, 126, 0.6) -1px -1px 6px,
+    rgba(233, 198, 110, 0.6) 1px 1px 6px;
+  transition: all 0.3s ease-in-out;
+}
+
 .btn,
 .right > div {
   cursor: pointer;

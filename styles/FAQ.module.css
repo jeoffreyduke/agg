@@ -8,6 +8,8 @@
   width: fit-content;
   height: fit-content;
   display: inline-block;
+  text-shadow: rgba(249, 215, 126, 0.6) -1px -1px 6px,
+    rgba(233, 198, 110, 0.6) 1px 1px 6px;
 }
 
 .icon > svg {

@@ -1,0 +1,33 @@
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.socials {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.socialIcon {
+  color: var(--theme);
+  height: 22px;
+  width: 22px;
+}
+
+.socialIcon:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease-in-out;
+}
+
+.copyright {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-family: Changa;
+  text-shadow: rgba(249, 215, 126, 0.6) -1px -1px 4px,
+    rgba(233, 198, 110, 0.6) 1px 1px 4px;
+}
