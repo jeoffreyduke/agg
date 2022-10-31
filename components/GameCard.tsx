@@ -4,9 +4,11 @@ import styles from "../styles/GameCard.module.css";
 
 interface GameCardProps {
   src: string;
+  name: string;
+  desc: string;
 }
 
-const GameCard = ({ src }: GameCardProps) => {
+const GameCard = ({ src, name, desc }: GameCardProps) => {
   return (
     <div className={styles.gameCon}>
       <span>
@@ -29,8 +31,11 @@ const GameCard = ({ src }: GameCardProps) => {
           <Image src={src} alt="game" height={250} width={400} />
         </div>
         <div className={styles.gameInfo}>
-          <div className={styles.gameTitle}>Game Title</div>
-          <div className={styles.gameDesc}>Game Description</div>
+          <div className={styles.gameTitle}>
+            <div>Top Game</div>
+            <div className={styles.gameName}>{name}</div>
+          </div>
+          <div className={styles.gameDesc}>{desc}</div>
         </div>
       </div>
     </div>

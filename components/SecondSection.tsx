@@ -25,9 +25,26 @@ const SecondSection = () => {
         </span>
         GAMES AND MORE
       </div>
-      <GameCard src="/assets/images/axie.jpeg" />
-      <GameCard src="/assets/images/ankots.png" />
-      <GameCard src="/assets/images/revoland.jpeg" />
+      <GameCard
+        src="/assets/images/axie.jpeg"
+        name="Axie Infinity"
+        desc="Axie Infinity is a non-fungible token-based online video game 
+        developed by Vietnamese studio Sky Mavis, known for its in-game 
+        economy which uses Ethereum-based cryptocurrencies."
+      />
+      <GameCard
+        src="/assets/images/ankots.png"
+        name="Ankots of Misteria"
+        desc="Ankots of Misteria is a strategic play-to-earn monster battling 
+        and resource minting game built on the Polygon blockchain."
+      />
+      <GameCard
+        src="/assets/images/revoland.jpeg"
+        name="Revoland"
+        desc="Revoland is a blockchain-based multiplayer online battle arena
+         (MOBA) game designed to combine players' individual techniques and 
+         teamwork to challenge themselves in multiple game modes. "
+      />
     </div>
   );
 };

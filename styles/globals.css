@@ -29,3 +29,15 @@ button {
   src: local("Changa"),
     url("/assets/fonts/Changa/Changa-VariableFont_wght.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Electrolize";
+  src: local("Electrolize"),
+    url("/assets/fonts/Electrolize/Electrolize-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BlackOpsOne";
+  src: local("BlackOpsOne"),
+    url("/assets/fonts/BlackOpsOne/BlackOpsOne-Regular.ttf") format("truetype");
+}
