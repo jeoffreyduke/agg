@@ -90,22 +90,6 @@
   margin-right: 1rem;
 }
 
-.checkpoint {
-  position: relative;
-  top: 1rem;
-  font-size: 1.18rem;
-  font-weight: 500;
-  text-shadow: rgba(249, 215, 126, 0.6) -1px -1px 6px,
-    rgba(233, 198, 110, 0.6) 1px 1px 6px;
-}
-
-.checkpoint > span {
-  position: relative;
-  bottom: 0.35rem;
-  padding: 0.5rem;
-  margin-left: 2.2rem;
-}
-
 /* styling for third section */
 .ThirdSection {
   width: 100vw;

@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
+import CheckPoint from "./CheckPoint";
 import FAQ from "./FAQ";
 
 const FourthSection = () => {
   return (
     <div className={styles.FourthSection}>
-      <div className={styles.checkpoint}>
-        <span>[ Checkpoint reached: our partners ]</span>
-      </div>
+      <CheckPoint />
       <div className={`${styles.secondHeading} ${styles.fourthHeading}`}>
         <span>
           <svg

@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import styles from "../styles/Home.module.css";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import CheckPoint from "./CheckPoint";
 gsap.registerPlugin(ScrollTrigger);
 
 const ThirdSection = () => {
@@ -83,9 +84,7 @@ const ThirdSection = () => {
 
   return (
     <div className={styles.ThirdSection} ref={section}>
-      <div className={styles.checkpoint}>
-        <span>[ Checkpoint reached: our partners ]</span>
-      </div>
+      <CheckPoint />
       <div className={`${styles.secondHeading} ${styles.thirdHeading}`}>
         <span>
           <svg

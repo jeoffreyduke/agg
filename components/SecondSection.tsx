@@ -1,13 +1,12 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
+import CheckPoint from "./CheckPoint";
 import GameCard from "./GameCard";
 
 const SecondSection = () => {
   return (
     <div className={styles.SecondSection}>
-      <div className={styles.checkpoint}>
-        <span>[ Checkpoint reached: games and more! ]</span>
-      </div>
+      <CheckPoint />
       <div className={styles.secondHeading}>
         <span>
           <svg
