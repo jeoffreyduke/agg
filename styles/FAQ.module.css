@@ -37,3 +37,17 @@
   margin-left: 3.2rem;
   border-bottom: 1px solid var(--theme);
 }
+
+@media (max-width: 480px) {
+  .FAQ {
+    padding: 0.5rem 1rem;
+  }
+
+  .title {
+    font-size: 0.85rem;
+  }
+
+  .content {
+    font-size: 0.8rem;
+  }
+}

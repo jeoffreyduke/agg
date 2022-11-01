@@ -31,3 +31,14 @@
   text-shadow: rgba(249, 215, 126, 0.6) -1px -1px 4px,
     rgba(233, 198, 110, 0.6) 1px 1px 4px;
 }
+
+@media (max-width: 480px) {
+  .socialIcon {
+    height: 16px;
+    width: 16px;
+  }
+
+  .copyright {
+    font-size: 0.6rem;
+  }
+}
