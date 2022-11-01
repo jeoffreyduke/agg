@@ -128,3 +128,63 @@
     margin-left: 2rem;
   }
 }
+
+@media (max-width: 480px) {
+  .gameCon {
+    display: flex;
+    margin-left: 2rem;
+    position: relative;
+    bottom: 0.5rem;
+    color: var(--theme);
+    margin-right: 1rem;
+  }
+
+  .gameCon > span {
+    position: relative;
+    bottom: 0;
+    top: 0.5rem;
+    margin-right: 1.2rem;
+  }
+
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60rem;
+    height: fit-content;
+    border: 2px solid var(--theme);
+    margin-bottom: 3rem;
+    color: white;
+    background: linear-gradient(rgba(249, 214, 126, 0.678) 0%, #f5a417a6 100%),
+      url("/assets/images/dot-grid.svg");
+    box-shadow: rgb(249, 215, 126) 0px 0px 9px;
+    text-shadow: rgba(249, 215, 126, 0.3) -1px -1px 5px,
+      rgba(233, 198, 110, 0.3) 1px 1px 5px;
+    padding: 2rem;
+  }
+
+  .imgOverlay {
+    display: none;
+  }
+
+  .gameTitle {
+    font-size: 0.85rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #fff;
+  }
+
+  .gameName {
+    font-size: 1.2rem;
+  }
+
+  .gameDesc {
+    font-size: 0.78rem;
+    line-height: 1rem;
+  }
+
+  .gameInfo {
+    width: 100%;
+    margin-left: 0;
+  }
+}

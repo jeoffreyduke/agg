@@ -73,3 +73,10 @@ $steps: 10;
 }
 }
 }
+
+
+@media (max-width: 480px) {
+  .checkpoint {
+    font-size: 0.8rem;
+  }
+}
