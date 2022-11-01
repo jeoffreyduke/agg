@@ -35,15 +35,10 @@
   box-shadow: rgb(249, 215, 126) 0px 0px 13px;
 }
 
-.gameImg > span > span > img {
-  filter: drop-shadow(0px 0px 3px rgb(249, 215, 126));
-  z-index: 5;
-}
-
 .imgOverlay {
   position: absolute;
-  width: 400px;
-  height: 250px;
+  width: 25rem;
+  height: 15.7rem;
   background: linear-gradient(rgba(249, 214, 126, 0.137) 0%, #f5a4173d 100%);
   z-index: 10;
 }
@@ -68,4 +63,68 @@
 
 .gameInfo {
   width: 50%;
+}
+
+/* media queries max width 900 */
+@media (max-width: 900px) {
+  .gameCon {
+    display: flex;
+    margin-left: 2rem;
+    position: relative;
+    bottom: 0.5rem;
+    color: var(--theme);
+    margin-right: 1rem;
+  }
+
+  .gameCon > span {
+    position: relative;
+    bottom: 0;
+    top: 0.5rem;
+    margin-right: 1.2rem;
+  }
+
+  .game {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60rem;
+    height: 25rem;
+    border: 2px solid var(--theme);
+    margin-bottom: 3rem;
+    color: white;
+    background: linear-gradient(rgba(249, 214, 126, 0.678) 0%, #f5a417a6 100%),
+      url("/assets/images/dot-grid.svg");
+    box-shadow: rgb(249, 215, 126) 0px 0px 9px;
+    text-shadow: rgba(249, 215, 126, 0.3) -1px -1px 5px,
+      rgba(233, 198, 110, 0.3) 1px 1px 5px;
+    padding: 2rem;
+  }
+
+  .imgOverlay {
+    position: absolute;
+    width: 18rem;
+    height: 11.2rem;
+    background: linear-gradient(rgba(249, 214, 126, 0.137) 0%, #f5a4173d 100%);
+    z-index: 10;
+  }
+
+  .gameTitle {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #fff;
+  }
+
+  .gameName {
+    font-size: 2rem;
+  }
+
+  .gameDesc {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .gameInfo {
+    width: 60%;
+    margin-left: 2rem;
+  }
 }

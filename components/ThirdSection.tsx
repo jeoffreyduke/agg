@@ -34,8 +34,35 @@ const ThirdSection = () => {
       },
     });
 
+    if (window.innerWidth < 1400) {
+      gsap.to(left.current, {
+        x: "-310",
+        duration: "5",
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: left.current,
+          scrub: 0.8,
+          start: "top bottom",
+          end: "top top",
+        },
+      });
+      gsap.to(right.current, {
+        x: "230",
+        duration: "5",
+        ease: "power1.out",
+        scrollTrigger: {
+          trigger: right.current,
+          scrub: 0.8,
+          start: "top bottom",
+          end: "top top",
+        },
+      });
+
+      return;
+    }
+
     gsap.to(left.current, {
-      x: "-405",
+      x: "-50%",
       duration: "5",
       ease: "power1.out",
       scrollTrigger: {
@@ -46,7 +73,7 @@ const ThirdSection = () => {
       },
     });
     gsap.to(right.current, {
-      x: "310",
+      x: "50%",
       duration: "5",
       ease: "power1.out",
       scrollTrigger: {

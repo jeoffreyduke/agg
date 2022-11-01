@@ -105,13 +105,13 @@
 .sponsor {
   display: flex;
   margin-top: 2rem;
-  margin-left: 4.5rem;
   font-size: 1rem;
   font-family: Changa;
 }
 
 .sponsorDesc,
 .sponsorImg {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,24 +119,18 @@
   height: 20rem;
   background-color: rgba(40, 40, 40, 0.95);
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 2rem 5rem;
 }
 
 .sponsorDesc {
-  transform: translateX(-200);
-  position: relative;
-  left: 22.5rem;
-  padding: 0rem 5rem;
+  left: 24rem;
   text-shadow: rgba(249, 215, 126, 0.3) -1px -1px 5px,
     rgba(233, 198, 110, 0.3) 1px 1px 5px;
 }
 
 .sponsorImg {
+  right: 24rem;
   background-color: #fff;
-  transform: translateX(200);
-  translate: 200;
-  position: relative;
-  right: 22.5rem;
 }
 
 /* styling for fourth section */
@@ -159,32 +153,108 @@
     top: 2rem;
   }
 
+  .ThirdSection {
+    padding: 0.5rem 6rem;
+  }
+
   .sponsorDesc,
   .sponsorImg {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 65rem;
-    height: 20rem;
-    background-color: rgba(40, 40, 40, 0.95);
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 2rem 5rem;
   }
 
   .sponsorDesc {
-    transform: translateX(-200);
-    position: relative;
-    left: 22.5rem;
-    padding: 0rem 5rem;
+    left: 18.7rem;
     text-shadow: rgba(249, 215, 126, 0.3) -1px -1px 5px,
       rgba(233, 198, 110, 0.3) 1px 1px 5px;
   }
 
   .sponsorImg {
+    right: 18.7rem;
     background-color: #fff;
-    transform: translateX(200);
-    translate: 200;
+  }
+}
+
+/* media queries max width 900 */
+@media (max-width: 900px) {
+  .ParticleImage {
+    height: 55vh;
+    top: 9rem;
+    left: -7rem;
+  }
+
+  /* styling for first section */
+  .FirstSection {
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .firstSectionRight {
+    right: 15rem;
+    top: 17rem;
+  }
+
+  .smTxt {
+    bottom: 4rem;
+    font-size: 1rem;
+  }
+
+  .mediumTxt {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .bigTxt {
+    font-size: 4rem;
+  }
+}
+
+/* media queries max width 480 */
+@media (max-width: 480px) {
+  .ParticleImage {
+    height: 40vh;
+    top: 1rem;
+    left: 2rem;
+  }
+
+  /* styling for first section */
+  .FirstSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem;
+    height: 86.5vh;
+    width: 100vw;
+  }
+
+  .firstSectionRight {
+    width: 22rem;
     position: relative;
-    right: 22.5rem;
+    right: -0.9rem;
+    top: -5rem;
+    text-align: center;
+  }
+
+  .smTxt {
+    bottom: 4rem;
+    font-size: 0.9rem;
+  }
+
+  .mediumTxt {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .bigTxt {
+    bottom: 3rem;
+    font-size: 3rem;
+  }
+
+  .bigBtn {
+    right: 0.4rem;
+    bottom: 2rem;
+    height: 2.5rem;
+    width: 20rem;
+    font-size: 0.62rem;
   }
 }
