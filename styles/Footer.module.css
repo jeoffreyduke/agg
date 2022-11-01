@@ -34,14 +34,8 @@
 
 @media (max-width: 480px) {
   .socialIcon {
-    color: var(--theme);
     height: 16px;
     width: 16px;
-  }
-
-  .socialIcon:hover {
-    transform: translateY(-5px);
-    transition: 0.3s ease-in-out;
   }
 
   .copyright {
