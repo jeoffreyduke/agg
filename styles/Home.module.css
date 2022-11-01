@@ -213,48 +213,54 @@
 @media (max-width: 480px) {
   .ParticleImage {
     height: 40vh;
-    top: 1rem;
-    left: 2rem;
+    top: 0rem;
+    left: 0rem;
   }
 
   /* styling for first section */
   .FirstSection {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 0.5rem;
     height: 86.5vh;
     width: 100vw;
   }
 
   .firstSectionRight {
-    width: 22rem;
+    width: 100%;
     position: relative;
-    right: -0.9rem;
-    top: -5rem;
+    right: 0rem;
+    top: -3rem;
     text-align: center;
   }
 
   .smTxt {
     bottom: 4rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .mediumTxt {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
     margin-bottom: 1.5rem;
   }
 
   .bigTxt {
     bottom: 3rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .bigBtn {
     right: 0.4rem;
-    bottom: 2rem;
+    bottom: 2.5rem;
     height: 2.5rem;
-    width: 20rem;
+    width: 100%;
     font-size: 0.62rem;
+  }
+
+  .bigBtn:hover,
+  .bigBtn:focus {
+    box-shadow: inset 24rem 0 0 0 var(--theme);
   }
 }
