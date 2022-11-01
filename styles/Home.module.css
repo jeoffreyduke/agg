@@ -238,7 +238,7 @@
 
   .smTxt {
     bottom: 4rem;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 
   .mediumTxt {
@@ -254,9 +254,9 @@
   .bigBtn {
     right: 0.4rem;
     bottom: 2.5rem;
-    height: 2.5rem;
+    height: 2rem;
     width: 90%;
-    font-size: 0.62rem;
+    font-size: 0.5rem;
   }
 
   .bigBtn:hover,
