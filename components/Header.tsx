@@ -4,6 +4,7 @@ import styles from "../styles/Header.module.css";
 
 const Header = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth <= 480) {
@@ -15,7 +16,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={styles.Header}>
+    <header
+      className={
+        showMenu ? `${styles.Header} ${styles.headerOpen}` : styles.Header
+      }
+    >
       <div className={styles.logo}>
         <Image
           src="/assets/logo.svg"
@@ -27,13 +32,21 @@ const Header = () => {
 
       <nav className={styles.right}>
         {isMobile ? (
-          "Menu"
+          <>
+            <div
+              className={styles.menuTxt}
+              onClick={() => setShowMenu(!showMenu)}
+            >
+              {showMenu ? "Close" : "Menu"}
+            </div>
+            {showMenu && <div className={styles.menuDropDown}></div>}
+          </>
         ) : (
           <>
-            <div>STAKING</div>
-            <div>SOCIALS</div>
-            <div>PARTNERS</div>
-            <div>FAQ</div>
+            <div className={styles.menuItem}>STAKING</div>
+            <div className={styles.menuItem}>SOCIALS</div>
+            <div className={styles.menuItem}>PARTNERS</div>
+            <div className={styles.menuItem}>FAQ</div>
             <button className={styles.btn}>WHITEPAPER</button>
           </>
         )}
