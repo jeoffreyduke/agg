@@ -111,7 +111,7 @@ const ThirdSection = () => {
 
   return (
     <div className={styles.ThirdSection} ref={section}>
-      <CheckPoint />
+      <CheckPoint checkpoint="Our Partners" />
       <div className={`${styles.secondHeading} ${styles.thirdHeading}`}>
         <span>
           <svg

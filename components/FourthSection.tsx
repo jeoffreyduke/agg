@@ -6,7 +6,7 @@ import FAQ from "./FAQ";
 const FourthSection = () => {
   return (
     <div className={styles.FourthSection}>
-      <CheckPoint />
+      <CheckPoint checkpoint="FAQS" />
       <div className={`${styles.secondHeading} ${styles.fourthHeading}`}>
         <span>
           <svg

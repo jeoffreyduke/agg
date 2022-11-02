@@ -6,7 +6,7 @@ import GameCard from "./GameCard";
 const SecondSection = () => {
   return (
     <div className={styles.SecondSection}>
-      <CheckPoint />
+      <CheckPoint checkpoint="Games And More" />
       <div className={styles.secondHeading}>
         <span>
           <svg
