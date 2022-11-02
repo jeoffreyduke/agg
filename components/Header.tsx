@@ -39,7 +39,19 @@ const Header = () => {
             >
               {showMenu ? "Close" : "Menu"}
             </div>
-            {showMenu && <div className={styles.menuDropDown}></div>}
+            {showMenu && (
+              <div className={styles.menuDropDown}>
+                <div className={styles.mobMenuItem}>STAKING</div>
+                <div className={styles.mobMenuItem}>SOCIALS</div>
+                <div className={styles.mobMenuItem}>PARTNERS</div>
+                <div className={styles.mobMenuItem}>FAQ</div>
+                <div className={styles.btnsDiv}>
+                  <button className={styles.btn}>Connect Wallet</button>
+                  <br />
+                  <button className={styles.btn}>WHITEPAPER</button>
+                </div>
+              </div>
+            )}
           </>
         ) : (
           <>

@@ -81,6 +81,10 @@
     font-family: Changa;
   }
 
+  .headerOpen {
+    position: fixed;
+  }
+
   .menuDropDown {
     position: fixed;
     top: 10vh;
@@ -88,9 +92,21 @@
     height: 91vh;
     width: 100vw;
     background-color: var(--bg);
+    padding: 1rem;
+    padding-top: 2rem;
   }
 
-  .headerOpen {
-    position: fixed;
+  .mobMenuItem {
+    font-size: 0.9rem;
+    padding-top: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.596);
+  }
+
+  .btnsDiv {
+    margin-top: 3rem;
+  }
+
+  .btn {
+    margin-bottom: 1rem;
   }
 }
