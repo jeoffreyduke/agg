@@ -86,11 +86,12 @@
   }
 
   .menuDropDown {
+    display: none;
     position: fixed;
     top: 10vh;
     left: 0;
     height: 91vh;
-    width: 100vw;
+    width: 0;
     background-color: var(--bg);
     padding: 1rem;
     padding-top: 2rem;
