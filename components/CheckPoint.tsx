@@ -6,15 +6,14 @@ interface CheckPointProps {
 }
 
 const CheckPoint = ({ checkpoint }: CheckPointProps) => {
+  let msg = `Checkpoint reached: ${checkpoint}!`;
+
   return (
     <div className={styles.checkpoint}>
       <span>
         [{" "}
-        <span
-          className={styles.glitch}
-          data-text="Checkpoint reached: games and more!"
-        >
-          Checkpoint reached: {checkpoint}!
+        <span className={styles.glitch} data-text={msg}>
+          {msg}
         </span>{" "}
         ]
       </span>
