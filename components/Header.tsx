@@ -20,8 +20,8 @@ const Header = () => {
         <Image
           src="/assets/logo.svg"
           alt="logo"
-          height={isMobile ? 45 : 80}
-          width={isMobile ? 45 : 80}
+          height={isMobile ? 50 : 80}
+          width={isMobile ? 50 : 80}
         />
       </div>
 
