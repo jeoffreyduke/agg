@@ -36,14 +36,14 @@ const Header = () => {
   const handleHideMenu = () => {
     if (showMenu) {
       gsap.to(menuRef.current, {
-        duration: 0.2,
-        display: "none",
-        ease: "power3.inOut",
-      });
-      gsap.to(menuRef.current, {
         duration: 0.4,
         width: "0",
         ease: "power4.inOut",
+      });
+      gsap.to(menuRef.current, {
+        duration: 0.2,
+        display: "none",
+        ease: "power3.inOut",
       });
 
       setShowMenu(false);
