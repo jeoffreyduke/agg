@@ -25,7 +25,7 @@ const Header = () => {
       ease: "power3.inOut",
     });
     gsap.to(menuRef.current, {
-      duration: 0.4,
+      duration: 0.5,
       width: "100vw",
       ease: "power4.inOut",
     });
@@ -36,7 +36,7 @@ const Header = () => {
   const handleHideMenu = () => {
     if (showMenu) {
       gsap.to(menuRef.current, {
-        duration: 0.4,
+        duration: 0.5,
         width: "0",
         ease: "power4.inOut",
       });
@@ -44,8 +44,8 @@ const Header = () => {
         duration: 0.2,
         display: "none",
         ease: "power3.inOut",
+        delay: 0.2,
       });
-
       setShowMenu(false);
     }
   };
